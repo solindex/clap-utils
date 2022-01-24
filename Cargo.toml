@@ -1,0 +1,31 @@
+[package]
+name = "solana-clap-utils"
+version = "1.8.14"
+description = "Solana utilities for the clap"
+authors = ["Solana Maintainers <maintainers@solana.foundation>"]
+repository = "https://github.com/solana-labs/solana"
+license = "Apache-2.0"
+homepage = "https://solana.com/"
+documentation = "https://docs.rs/solana-clap-utils"
+edition = "2018"
+
+[dependencies]
+clap = "2.33.0"
+rpassword = "4.0"
+solana-perf = { git = "https://github.com/solindex/perf.git", version = "=1.8.14" }
+solana-remote-wallet = { git = "https://github.com/solindex/remote-wallet.git", version = "=1.8.14" }
+solana-sdk = { git = "https://github.com/solindex/sdk.git", version = "=1.8.14" }
+thiserror = "1.0.21"
+tiny-bip39 = "0.8.1"
+uriparse = "0.6.3"
+url = "2.1.0"
+chrono = "0.4"
+
+[dev-dependencies]
+tempfile = "3.1.0"
+
+[lib]
+name = "solana_clap_utils"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
